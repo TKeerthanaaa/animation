@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+:root {
+  --clr-green: #008000;
+  --clr-lightblue: #add8e6;
+  --clr-bright-blue: hsl(224, 93%, 58%);
+  --clr-black: rgb(77, 76, 76);
+  --clr-white: #ffffff;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+.sky,
+.land,
+.road,
+.roadline {
+  position: relative;
+}
+.sky {
+  background-color: var(--clr-lightblue);
+  height: 40vh;
+}
+
+.land {
+  background-color: var(--clr-green);
+  height: 30vh;
+  box-shadow: 0 -1rem 0.5rem var(--clr-green);
+}
+
+.road {
+  background-color: var(--clr-black);
+  height: 30vh;
+}
+
+.cloud-one {
+  position: absolute;
+  top: 60px;
+  left: 70px;
+}
+.cloud-two {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  opacity: 0.5;
+}
+
+.luigi,
+.mario {
+  margin-left: 6rem;
+}
+
+.roadline {
+  border-top: 2rem solid white;
+  border-style: dashed;
+  border-bottom: none;
+  bottom: -1.5rem;
+}
